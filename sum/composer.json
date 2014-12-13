@@ -1,0 +1,20 @@
+{
+    "name": "hagnat/dojo-sum",
+    "description": "a simple dojo exercise, where you are only allowed to use the sum function to do basic math",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Valdir Bruxel Junior",
+            "email": "hagnat@gmail.com"
+        }
+    ],
+    "require": {
+            "phpunit/phpunit": "4.3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hagnat\\Dojo\\Sum\\": "src/",
+            "Hagnat\\Dojo\\Sum\\Tests\\": "tests/unit/"
+        }
+    }
+}
