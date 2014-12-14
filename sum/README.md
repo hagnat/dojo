@@ -1,5 +1,4 @@
-SUM EXERCISE
-============
+# SUM EXERCISE
 by Valdir Bruxel Junior <hagnat@gmail.com>
 
 In this dojo exercise your task is to create a class that can 
@@ -9,11 +8,9 @@ multiplication and division, modulation) as well as more advanced
 function of the class.
 
 
-ELEMENTARY FUNCTIONS
-====================
+## ELEMENTARY FUNCTIONS
 
-Addition
-========
+### Addition
 
 The addition function is plain and simple. It will be the foundation
 for your other functions.
@@ -22,8 +19,7 @@ for your other functions.
     1 + 2 = 3
     2 + 2 = 4
 
-Subtraction
-===========
+### Subtraction
 
 In order to subtract, you need to use the addition function create
 above with the second parameter inverted. Piece of cake.
@@ -32,8 +28,7 @@ above with the second parameter inverted. Piece of cake.
     7 - 3 = 7 + (-3) = 4
     4 - 4 = 4 + (-4) = 0
 
-Multiplication
-==============
+### Multiplication
 
 Multiplication is simply addition repeated N times. Again, a simple
 problem.
@@ -42,8 +37,7 @@ problem.
     5 * 4 = 5 + 5 + 5 + 5 = 20
     2 * 0 = () = 0
 
-Division
-========
+### Division
 
 We will be assuming that any number divided during this exercise will
 return an integer, and not focus on what is beyong the floating point.
@@ -56,8 +50,7 @@ as an exercise for the student.
     0 / 2 = 0
     1 / 0 = false
 
-Modulation
-==========
+### Modulation
 
 Since our division function ignores the floating point, we will
 implement modulation in order to figure out how much is left from
@@ -68,8 +61,7 @@ the division function.
     0 \ 2 = 0
     1 \ 0 = false
 
-ADVANCED MATH
-=============
+## ADVANCED MATH
 
 Exponentiation, Root and Logarithm share a relationship between
 themselves. They all operate over the same equation, only trying
@@ -77,16 +69,17 @@ to figure out a different part of it.
 
     base ^^ exponent = result
 
-Exponentiation knows both BASE and EXPONENT and wants to know 
+* Exponentiation knows both BASE and EXPONENT and wants to know 
 the RESULT.
-Root knows EXPONENT and RESULT, and wants to know the BASE.
-Logarithm knows BASE and RESULT, and wants to know the EXPONENT.
+
+* Root knows EXPONENT and RESULT, and wants to know the BASE.
+
+* Logarithm knows BASE and RESULT, and wants to know the EXPONENT.
 
 With that in mind, you might be able to solve the rest of the
 exercise.
 
-Exponentiation
-==============
+### Exponentiation
 
 Exponentation is the simplest of all advanced math functions.
 Its simply multiplication, repeated.
@@ -107,8 +100,7 @@ it always returns a value lesser than 1.
     2 ^ -2 = 1 / 2^2 = 1/4 = 0.25
     // do not test this
 
-Root
-====
+### Root
 
 Like in the division, we will be working only with integers.
 Round down the root value, and return both it AND the remainder 
@@ -127,8 +119,7 @@ We won't be covering the root of negative values and/or negative
 exponents mostly because... it gets too complicated for this
 exercise.
 
-Logarithm
-=========
+### Logarithm
 
 Again we will be making your life easier. You round down the
 exponent, and you return it and the remainder of the base that
@@ -140,22 +131,21 @@ wouldn't be reached.
     130 log 5 = [3, 5]
     120 log 10 = [2, 20]
 
-FINSH!
-======
+## FINISH!
 
 If your class managed to fulfill all this exercises without
 using any function other then addition you have completed the
 test. Congratulations!
 
 
-BONUS ROUND
-===========
+## BONUS ROUND
 
 If you managed to complete this exercise, now its time to solve
 it by using "memory positions". Instead a value directly, you need
 to store it in the object and pass the position you are operating
 to the functions.
 
+```php
     class MathematicalOperators
     {
         protected $memory = array();
@@ -175,7 +165,8 @@ to the functions.
     $math->setMemorySlot(1, 1);
     $math->setMemorySlot(2, 2);
     print $math->sum(1, 2); 
+```
 
-Solve the exercise with the least amount of memory slots possible.
+Solve the bonus round with the least amount of memory slots possible.
 
 ps. any internal variable you use needs to be stored in the memory too.
