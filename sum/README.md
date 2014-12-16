@@ -7,6 +7,19 @@ multiplication and division, modulation) as well as more advanced
 (exponentiation, root and logarithm) by only using the addition
 function of the class.
 
+This problem is created for high-level programming developers that are
+not used to code in low-level languages.
+
+## Rules
+
+* You can only use the sum operator ONCE
+* You may re-use methods that you have developed to solve earlier problems. 
+This is in fact encouraged.
+* You can use the subtract operator only to invert a value. 
+(eg. -$x is legal, $x - $y is not)
+* You cannot use the native operators even inside internal functions, 
+such as loops. (eg. for ($x=0; $x<10; $x++) is illegal, for ($x=0l $x<10; 
+$x = $this->add($x,1) is the right way)
 
 ## ELEMENTARY FUNCTIONS
 
