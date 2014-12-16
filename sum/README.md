@@ -14,12 +14,12 @@ not used to code in low-level languages.
 
 * You can only use the sum operator ONCE
 * You may re-use methods that you have developed to solve earlier problems. 
-This is in fact encouraged.
+This is, in fact, encouraged.
 * You can use the subtract operator only to invert a value. 
-(eg. -$x is legal, $x - $y is not)
+(eg. ```-$x``` is legal, ```$x - $y``` is not)
 * You cannot use the native operators even inside internal functions, 
-such as loops. (eg. for ($x=0; $x<10; $x++) is illegal, for ($x=0l $x<10; 
-$x = $this->add($x,1) is the right way)
+such as loops. (eg. ```for ($x=0; $x<10; $x++)``` is illegal, ```for ($x=0; $x<10; 
+$x = $this->add($x,1))``` is the right way)
 
 ## ELEMENTARY FUNCTIONS
 
@@ -116,8 +116,8 @@ it always returns a value lesser than 1.
 ### Root
 
 Like in the division, we will be working only with integers.
-Round down the root value, and return both it AND the remainder 
-of the operation.
+Round down the root value and return it with the remainder of
+this operation
 
     4 rth 2 = [2, 0]
     9 rth 2 = [3, 0]
@@ -134,9 +134,8 @@ exercise.
 
 ### Logarithm
 
-Again we will be making your life easier. You round down the
-exponent, and you return it and the remainder of the base that
-wouldn't be reached.
+Again we will be making your life easier. Round down the exponent 
+and return it with whatever remains of the base.
 
     4 log 2 = [2, 0]
     8 log 2 = [3, 0]
@@ -154,9 +153,10 @@ test. Congratulations!
 ## BONUS ROUND
 
 If you managed to complete this exercise, now its time to solve
-it by using "memory positions". Instead a value directly, you need
-to store it in the object and pass the position you are operating
-to the functions.
+it by using "memory slots". 
+
+Instead of operating a value directly, you need to store it in 
+the object and pass the slot you are operating with to the functions.
 
 ```php
     class MathematicalOperators
@@ -180,6 +180,7 @@ to the functions.
     print $math->sum(1, 2); 
 ```
 
-Solve the bonus round with the least amount of memory slots possible.
+### Rules
 
-ps. any internal variable you use needs to be stored in the memory too.
+* Solve the bonus round with the least amount of memory slots possible.
+* any internal variable you use needs to be stored in the memory too.
