@@ -175,9 +175,9 @@ the object and pass the slot you are operating with to the functions.
     }
 
     $math = new MathematicalOperators();
-    $math->setMemorySlot(1, 1);
-    $math->setMemorySlot(2, 2);
-    print $math->sum(1, 2); 
+    $math->setMemorySlot('alpha', 3);
+    $math->setMemorySlot('bravo', 5);
+    print $math->sum('alpha', 'bravo'); // 3 + 5
 ```
 
 ### Rules
